@@ -17,6 +17,7 @@ const Input = ({
   message,
   hideLabel,
   children,
+  rootProps,
   ...props
 }, { rebass }) => {
   const { scale, colors, borderColor } = { ...config, ...rebass }
@@ -27,8 +28,7 @@ const Input = ({
     rounded,
     backgroundColor,
     theme,
-    inverted,
-    ...rootProps
+    inverted
   } = props
 
   const sx = {
